@@ -1,0 +1,31 @@
+/* Header */
+div {
+  float: right;
+  box-sizing: border-box;
+  border-color: light gray;
+}
+
+/* Side Nav */
+nav {
+  float: left;
+  display: block;
+  background-color: #4e5156;
+
+}
+
+/* Web Results */
+.webresults {
+  float: none;
+}
+
+/* Images */
+.images {
+  float: right;
+}
+
+/* Maps */
+
+/* Footer */
+body{
+  text-align: center;
+}
