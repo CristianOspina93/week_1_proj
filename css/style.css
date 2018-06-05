@@ -1,31 +1,67 @@
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
 /* Header */
-div {
-  float: right;
-  box-sizing: border-box;
-  border-color: light gray;
+header ul {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0;
+  margin-right: 0;
 }
 
+.sideicon {
+  height: 130px;
+  width: 700px;
+  /* margin-left: 300px; */
+}
+
+.search {
+  width: 700px;
+  height: 125px;
+}
 /* Side Nav */
+.sidenav {
+  width: 1000px;
+}
+
 nav {
-  float: left;
-  display: block;
   background-color: #4e5156;
-
+  height: 100vh;
+  color: lightgray;
 }
 
+.linktop a:visited {
+  color: white;
+}
+
+.linkbottom a:visited {
+  color: white;
+}
+
+.linktop {
+  text-decoration: none;
+}
 /* Web Results */
-.webresults {
-  float: none;
+.flex-container {
+  display: flex;
+  flex-direction: row;
 }
+
+.Results {
+  padding-left: 30px;
+}
+/* body{
+  text-align: center;
+} */
+
 
 /* Images */
-.images {
-  float: right;
-}
 
 /* Maps */
 
 /* Footer */
-body{
-  text-align: center;
-}

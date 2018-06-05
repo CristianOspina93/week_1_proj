@@ -6,43 +6,50 @@
     <title>Modern Google Search</title>
     <link href="css/normalize.css" type="text/css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
   <body>
     <header>
-      <div>
-        <img src="#" alt="Google-Logo">
-        <img src="#" alt="Search">
-        <form class="searchbar" action="index.html" method="get">
-          <input type="text" name="" value="">
-        </form>
-        <img src="#" alt="Notifications">
-        <select class="Accounts" name="Email">
-        <option value="">kendrick.lamar@gmail.com</option>
-        <option value="">email@gmail.com</option>
-        </select>
-        <img src="#" alt="Apps-Logo">
-        <img src="#" alt="Google+-Logo">
-      </div>
-    </header>
-    <nav>
-      <h5>Types</h5>
       <ul>
-        <li><img src="#" alt="Custom"><a href="#">Custom</a></li>
-        <li><img src="#" alt="Web"><a href="#">Web</a></li>
-        <li><img src="#" alt="Images"><a href="#">Images</a></li>
-        <li><img src="#" alt="Maps"><a href="#">Maps</a></li>
-        <li><img src="#" alt="Videos"><a href="#">Videos</a></li>
-        <li><img src="#" alt="More"><a href="#">More</a></li>
+        <li>
+          <img src="images/logo.png" alt="Google-Logo" class="logo">
+        </li>
+        <li>
+          <i class=“fa fa-search”></i>
+        </li>
+        <li>
+          <form class="searchbar" action="index.html" method="get">
+            <input type="text" name="" value="" class="search" placeholder="Panthera leo">
+          </form>
+        </li>
+        <li class="Sideicons">
+          <img src="images/sideicon.png" alt="sideicons" class="sideicon">
+        </li>
+      </ul>
+    </header>
+  <div class="flex-container">
+    <div class="sidenav">
+      <nav>
+        <h5>Types</h5>
+        <ul class="linktop">
+          <li><a href="#">Custom</a></li>
+          <li><a href="#">Web</a></li>
+          <li><a href="#">Images</a></li>
+          <li><a href="#">Maps</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">More</a></li>
       </ul>
       <h5>Filter</h5>
-      <ul>
-        <li><img src="#" alt="Nearby"><a href="#">Nearby</a></li>
-        <li><img src="#" alt="Last month"><a href="#">Last month</a></li>
-        <li><img src="#" alt="All results"><a href="#">All results</a></li>
-        <li><img src="" alt="All languages"><a href="#">All languages</a></li>
-      </ul>
-    </nav>
-    <section class="Web-Results">
+      <ul class="linkbottom">
+          <li><a href="#">Nearby</a></li>
+          <li><a href="#">Last month</a></li>
+          <li><a href="#">All results</a></li>
+          <li><a href="#">All languages</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="Results">
       <h1>Web</h1>
       <a href="#" class="result1">Panthera leo - Wikipedia</a>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -64,15 +71,15 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       <a href="#" class="resultlink5">free.dictionnary.com</a>
       </p>
-    </section>
-    <section class="Images">
-      <img src="#" alt="Image-Results">
-    </section>
-    <section class="Maps">
+    </div>
+    <div class="Rightside">
+      <h1>Images</h1>
+      <img src="images/lions.png" alt="Image-Results">
+      <h1>Maps</h1>
       <img src="images/maps.png" alt="Maps">
-    </section>
+    </div>
     <footer>
-      <p>465000 RESUTS <em>0.3 SEC</em></p>
     </footer>
+  </div>
   </body>
 </html>
