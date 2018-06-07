@@ -10,76 +10,95 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
   <body>
+
     <header>
-      <ul>
-        <li>
-          <img src="images/logo.png" alt="Google-Logo" class="logo">
-        </li>
-        <li>
-          <i class=“fa fa-search”></i>
-        </li>
-        <li>
-          <form class="searchbar" action="index.html" method="get">
-            <input type="text" name="" value="" class="search" placeholder="Panthera leo">
-          </form>
-        </li>
-        <li class="Sideicons">
-          <img src="images/sideicon.png" alt="sideicons" class="sideicon">
-        </li>
-      </ul>
+      <div class='header-content header-left'>
+        <img src="images/logo.png" alt="Google-Logo" class="logo">
+      </div>
+
+      <div class="header-content header-center">
+        <form class="searchbar" action="index.html" method="get">
+          <input type="text" name="search" value="" class="search" placeholder="  &#xF002; Panthera leo" style="font-family:Arial, FontAwesome">
+        </form>
+      </div>
+
+      <div class="header-content header-right">
+        <img src="images/sideicon.png" alt="sideicons" class="sideicon">
+      </div>
     </header>
-  <div class="flex-container">
-    <div class="sidenav">
+
+    <main>
       <nav>
-        <h5>Types</h5>
-        <ul class="linktop">
-          <li><a href="#">Custom</a></li>
-          <li><a href="#">Web</a></li>
-          <li><a href="#">Images</a></li>
-          <li><a href="#">Maps</a></li>
-          <li><a href="#">Videos</a></li>
-          <li><a href="#">More</a></li>
-      </ul>
-      <h5>Filter</h5>
-      <ul class="linkbottom">
-          <li><a href="#">Nearby</a></li>
-          <li><a href="#">Last month</a></li>
-          <li><a href="#">All results</a></li>
-          <li><a href="#">All languages</a></li>
+        <div class="link-container">
+          <h5>Types</h5>
+          <ul class="linktop">
+            <li><a href="#">Custom</a></li>
+            <li><a href="#">Web</a></li>
+            <li><a href="#">Images</a></li>
+            <li><a href="#">Maps</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">More</a></li>
         </ul>
+        <h5>Filter</h5>
+        <ul class="linkbottom">
+            <li><a href="#">Nearby</a></li>
+            <li><a href="#">Last month</a></li>
+            <li><a href="#">All results</a></li>
+            <li><a href="#">All languages</a></li>
+          </ul>
+        </div>
       </nav>
-    </div>
-    <div class="Results">
-      <h1>Web</h1>
-      <a href="#" class="result1">Panthera leo - Wikipedia</a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      <a href="#" class="resultlink1">en.wikipedia.com</a>
-      </p>
-      <a href="#" class="result2">Lion - Wikipedia</a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      <a href="#" class="resultlink2">en.wikipedia.com</a>
-      </p>
-      <a href="#" class="result3">Panthera leo - african lion</a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      <a href="#" class="resultlink3">animal.search.com</a>
-      </p>
-      <a href="#" class="result4">Panthera leo - the animal encyclopedia</a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      <a href="#" class="resultlink4">encyclepedia.an.com</a>
-      </p>
-      <a href="#" class="result5">Panthera leo- the free dictionary</a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      <a href="#" class="resultlink5">free.dictionnary.com</a>
-      </p>
-    </div>
-    <div class="Rightside">
-      <h1>Images</h1>
-      <img src="images/lions.png" alt="Image-Results">
-      <h1>Maps</h1>
-      <img src="images/maps.png" alt="Maps">
-    </div>
+
+      <section>
+        <div class="results">
+          <h1>Web</h1>
+          <div class="result">
+            <a href="#" class="result1">Panthera leo - Wikipedia</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <a href="#" class="resultlink1">en.wikipedia.com</a>
+            </p>
+          </div>
+
+          <div class="result">
+            <a href="#" class="result2">Lion - Wikipedia</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <a href="#" class="resultlink2">en.wikipedia.com</a>
+            </p>
+          </div>
+
+          <div class="result">
+            <a href="#" class="result3">Panthera leo - african lion</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <a href="#" class="resultlink3">animal.search.com</a>
+            </p>
+          </div>
+
+          <div class="result">
+            <a href="#" class="result4">Panthera leo - the animal encyclopedia</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <a href="#" class="resultlink4">encyclepedia.an.com</a>
+            </p>
+          </div>
+
+          <div class="result">
+            <a href="#" class="result5">Panthera leo- the free dictionary</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <a href="#" class="resultlink5">free.dictionnary.com</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="right-side">
+        <h1>Images</h1>
+        <img src="images/lions.png" alt="Image-Results">
+        <h1>Maps</h1>
+        <img src="images/maps.png" alt="Maps">
+      </section>
+    </main>
+
     <footer>
     </footer>
-  </div>
+
   </body>
 </html>
